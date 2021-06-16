@@ -1,12 +1,12 @@
 /*
  * Copyright (c) 2021 fuzzy
- * 项目名称：Vue3-Vite-Demo-TypeScript
+ * 项目名称：Vue3-Vite-TypeScript-Demo
  * 文件名称：request.ts
  * 创建日期：2021年06月17日
  * 创建作者：fuzzy
  */
 
-import axios from 'axios'
+import axios, {AxiosRequestConfig, AxiosResponse} from 'axios'
 // @ts-ignore
 import {clearSession, getSession} from '@/utils/storage.ts'
 import {router} from '@/router'
@@ -24,7 +24,7 @@ const service = axios.create({
 
 // 添加请求拦截器
 service.interceptors.request.use(
-  (config) => {
+  (config): AxiosRequestConfig => {
     // 在发送请求之前做些什么 token
     if (getSession('token')) {
       config.headers.common.Authorization = getSession('token')
@@ -40,7 +40,7 @@ service.interceptors.request.use(
 
 // 添加响应拦截器
 service.interceptors.response.use(
-  (response) => {
+  (response): AxiosResponse | Promise<any> => {
     // 对响应数据做点什么
     const res = response.data
     if (res.code && res.code !== 0) {

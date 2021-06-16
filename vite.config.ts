@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2021 fuzzy
- * 项目名称：Vue3-Vite-Demo-TypeScript
+ * 项目名称：Vue3-Vite-TypeScript-Demo
  * 文件名称：vite.config.ts
  * 创建日期：2021年06月17日
  * 创建作者：fuzzy
@@ -14,7 +14,7 @@ import {loadEnv} from './src/utils/viteBuild.js'
 
 const {VITE_PORT, VITE_OPEN, VITE_PUBLIC_PATH} = loadEnv()
 
-const alias = {
+const alias: Record<string, string> = {
   '/@': resolve('/src'),
   '@': resolve('/src'),
 }
@@ -50,7 +50,7 @@ export default defineConfig({
     open: VITE_OPEN,
     proxy: {
       '/api/v1': {
-        target: 'http://leslie.free.vipnps.vip/api/v1',
+        target: 'http://localhost',
         ws: false,
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api\/v1/, ''),
