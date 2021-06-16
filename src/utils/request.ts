@@ -1,8 +1,8 @@
 /*
  * Copyright (c) 2021 fuzzy
- * 项目名称：vue3-vite-demo
- * 文件名称：request.js
- * 创建日期：2021年06月16日
+ * 项目名称：Vue3-Vite-Demo-TypeScript
+ * 文件名称：request.ts
+ * 创建日期：2021年06月17日
  * 创建作者：fuzzy
  */
 

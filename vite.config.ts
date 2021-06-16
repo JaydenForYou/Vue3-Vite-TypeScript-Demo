@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2021 fuzzy
+ * 项目名称：Vue3-Vite-Demo-TypeScript
+ * 文件名称：vite.config.ts
+ * 创建日期：2021年06月17日
+ * 创建作者：fuzzy
+ */
+
 import {defineConfig} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import styleImport from 'vite-plugin-style-import'

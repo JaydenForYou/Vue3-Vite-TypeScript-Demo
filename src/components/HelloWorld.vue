@@ -1,13 +1,22 @@
+<!--
+  - Copyright (c) 2021 fuzzy
+  - 项目名称：Vue3-Vite-Demo-TypeScript
+  - 文件名称：HelloWorld.vue
+  - 创建日期：2021年06月17日
+  - 创建作者：fuzzy
+  -->
+
 <template>
-  <h1>{{ msg }}</h1>
+  <el-button>我是按钮</el-button>
+  <h1>Hi, Vue3 + Vite + Typescript</h1>
 
   <p>
     Recommended IDE setup:
     <a href="https://code.visualstudio.com/" target="_blank">VSCode</a>
     +
     <a
-      href="https://marketplace.visualstudio.com/items?itemName=octref.vetur"
-      target="_blank"
+        href="https://marketplace.visualstudio.com/items?itemName=octref.vetur"
+        target="_blank"
     >
       Vetur
     </a>
@@ -35,7 +44,8 @@
 </template>
 
 <script lang="ts">
-import { ref, defineComponent } from 'vue'
+import {ref, defineComponent} from 'vue'
+
 export default defineComponent({
   name: 'HelloWorld',
   props: {
@@ -46,7 +56,7 @@ export default defineComponent({
   },
   setup: () => {
     const count = ref(0)
-    return { count }
+    return {count}
   }
 })
 </script>
