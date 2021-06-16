@@ -1,6 +1,0 @@
-<component name="CopyrightManager">
-  <copyright>
-    <option name="notice" value="Copyright (c) &amp;#36;today.year fuzzy&#10;项目名称：&amp;#36;project.name&#10;文件名称：&amp;#36;file.fileName&#10;创建日期：&amp;#36;today.format('yyyy年MM月dd日')&#10;创建作者：fuzzy" />
-    <option name="myName" value="fuzzy" />
-  </copyright>
-</component>
