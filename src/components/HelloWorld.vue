@@ -45,7 +45,6 @@
 
 <script lang="ts">
 import {ref, defineComponent} from 'vue'
-import request from "@/utils/request";
 
 export default defineComponent({
   name: 'HelloWorld',
